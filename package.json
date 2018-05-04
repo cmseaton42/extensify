@@ -1,0 +1,37 @@
+{
+    "name": "extensify",
+    "version": "1.0.0",
+    "description": "A simple lightweight plugin framework for node :rocket:",
+    "main": "index.js",
+    "scripts": {
+        "test":
+            "npm run lint && jest && npm run test:coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+        "test:local": "npm run lint && jest && npm run test:coverage",
+        "test:watch": "jest --watch",
+        "test:coverage": "jest --coverage",
+        "test:detailed": "jest --verbose",
+        "test:update": "jest -u",
+        "lint": "./node_modules/.bin/eslint . --ext .js",
+        "lint:fix": "npm run lint -- --fix"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cmseaton42/extensify.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/cmseaton42/extensify/issues"
+    },
+    "homepage": "https://github.com/cmseaton42/extensify#readme",
+    "dependencies": {
+        "lodash": "^4.17.10"
+    },
+    "devDependencies": {
+        "coveralls": "^3.0.1",
+        "eslint": "^4.19.1",
+        "eslint-plugin-jest": "^21.15.1",
+        "jest": "^22.4.3"
+    }
+}
