@@ -1,6 +1,6 @@
 {
-    "name": "extensify",
-    "version": "1.0.0",
+    "name": "extensifyjs",
+    "version": "0.0.1",
     "description": "A simple lightweight plugin framework for node :rocket:",
     "main": "./src/index.js",
     "scripts": {
